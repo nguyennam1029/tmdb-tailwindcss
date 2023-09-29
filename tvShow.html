@@ -4,148 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="scroll.css" />
     <title>TMDB-Tailwindcss</title>
   </head>
   <body>
     <div class="overflow-hidden">
       <div class="fixed z-[100] top-0 inset-x-0 bg-[#032541] text-[#fff]">
         <nav
-          class="max-w-[1320px] ease-[ease-in] transition-all duration-[0.5s] mx-auto my-0 lg:block hidden"
-        >
-          <div class="flex items-center gap-4 font-semibold py-[18px]">
-            <a href="/" class="apply text-[2.1rem] pl-0 pr-[15px] py-0">
-              <img src="images/logo.svg" alt="logo" width="154" height="20" />
-            </a>
+        class="max-w-[1300px] ease-[ease-in] transition-all duration-[0.5s] mx-auto my-0 lg:block hidden"
+      >
+        <div class="flex items-center gap-4 font-semibold px-10 py-[18px]">
+          <a href="/" class="apply text-[2.1rem] pl-0 pr-[15px] py-0">
+            <img src="images/logo.svg" alt="logo" width="154" height="20" />
+          </a>
 
-            <div class="flex items-center justify-between w-full">
-              <ul class="flex items-center gap-6">
-                <li class="nav-list-container--item group relative">
-                  <a href="/">Movies</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+          <div class="flex items-center justify-between w-full">
+            <ul class="flex items-center gap-6">
+              <li class="nav-list-container--item group relative">
+                <a href="/">Movies</a>
+                <div
+                  class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Popular</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Popular</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Now Playing</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Upcoming</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Top Rated</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">TV Shows</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Now Playing</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./tvShow.html"
-                      >Popular</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Airing Today</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >On TV</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Top Rated</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">People</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Upcoming</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./people.html"
-                      >Popular</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">More</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Top Rated</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Popular</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Airing Today</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >On TV</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Top Rated</a
-                    >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="/">TV Shows</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./tvShow.html"
+                    >Popular</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >Airing Today</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >On TV</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >Top Rated</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="./people.html">People</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./people.html"
+                    >Popular</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="/">More</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Popular</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Airing Today</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >On TV</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Top Rated</a
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <ul class="flex items-center gap-[26px]">
+              <li>
+                <a href="/">
+                  <i class="w-5 block">
+                    <img src="images/plus.svg" alt="" />
+                  </i>
+                </a>
+              </li>
+
+              <li>
+                <a href="/">
+                  <div
+                    class="w-7 h-[26px] flex justify-center items-center content-center border text-[0.7rem] px-[5px] py-[3px] rounded-[3px] border-solid border-white"
+                  >
+                    EN
                   </div>
-                </li>
-              </ul>
+                </a>
+              </li>
 
-              <ul class="flex items-center gap-[26px]">
-                <li>
-                  <a href="/">
-                    <i class="w-5 block">
-                      <img src="images/plus.svg" alt="" />
-                    </i>
-                  </a>
-                </li>
+              <li>
+                <a href="/">Login</a>
+              </li>
 
-                <li>
-                  <a href="/">
-                    <div
-                      class="w-7 h-[26px] flex justify-center items-center content-center border text-[0.7rem] px-[5px] py-[3px] rounded-[3px] border-solid border-white"
-                    >
-                      EN
-                    </div>
-                  </a>
-                </li>
+              <li>
+                <a href="/">Join TMDB</a>
+              </li>
 
-                <li>
-                  <a href="/">Login</a>
-                </li>
-
-                <li>
-                  <a href="/">Join TMDB</a>
-                </li>
-
-                <li>
-                  <a href="/">
-                    <i class="block w-[30px]">
-                      <img src="./images/search.svg" alt="" />
-                    </i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a href="/">
+                  <i class="block w-[30px]">
+                    <img src="./images/search.svg" alt="" />
+                  </i>
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
         <!-- ======= Mobile ==== -->
-        <div class=" bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between">
+        <div
+          class="bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between"
+        >
           <span class="mobile-header--icon menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -178,87 +198,245 @@
                 />
               </svg>
             </span>
-            <img src="./images/search.svg" alt="" class="mobile-header--icon search w-6 h-6" />
+            <img
+              src="./images/search.svg"
+              alt=""
+              class="mobile-header--icon search w-6 h-6"
+            />
           </div>
         </div>
-        
       </div>
 
+      <!-- ==========START CONTENT ============ -->
 
-     <!-- ==========START CONTENT ============ -->
+      <div class="max-w-[1320px] mx-auto md:mt-[66px] mt-[61px]">
+        <h2 class="pt-7 pb-7 pl-5 pr-5 lg:pl-0 lg:pr-0 text-2xl font-semibold">
+          Popular TV Shows
+        </h2>
 
-     <div class="max-w-[1320px] mx-auto md:mt-[66px] mt-[61px]">
-        <h2 class="pt-7 pb-7 pl-5 pr-5 lg:pl-0 lg:pr-0  text-2xl font-semibold ">Popular TV Shows</h2>
-      
-        <div class="grid md:grid-cols-[260px,1fr] grid-cols-[1fr] gap-4 md:gap-8 pl-5 pr-5 lg:pl-0 lg:pr-0 ">
+        <div
+          class="grid md:grid-cols-[260px,1fr] grid-cols-[1fr] gap-4 md:gap-8 pl-5 pr-5 lg:pl-0 lg:pr-0"
+        >
           <div>
-            <div class="shadow-[0_2px_8px_rgba(0,0,0,0.1)] flex justify-between flex-wrap items-center p-4 rounded-lg border border-gray-200 bg-white">
+            <div
+              class="shadow-[0_2px_8px_rgba(0,0,0,0.1)] flex justify-between flex-wrap items-center p-4 rounded-lg border border-gray-200 bg-white"
+            >
               <span class="text-16 font-semibold">Sort</span>
               <img class="w-4 h-4" src="./images/next.svg" alt="" />
             </div>
             <div class="mt-3">
-              <div class="shadow-[0_2px_8px_rgba(0,0,0,0.1)] flex justify-between items-center p-4 rounded-lg border-t border-gray-200 bg-white">
+              <div
+                class="shadow-[0_2px_8px_rgba(0,0,0,0.1)] flex justify-between items-center p-4 rounded-lg border-t border-gray-200 bg-white"
+              >
                 <span class="text-gray-500">Filters</span>
                 <img class="w-4 h-4" src="./images/next.svg" alt="" />
               </div>
               <div class="p-4">
                 <h3 class="flex items-center text-gray-500">
                   Show Me
-                  <img class="w-4 h-4 ml-2" src="./images/circle-question.svg" alt="" />
+                  <img
+                    class="w-4 h-4 ml-2"
+                    src="./images/circle-question.svg"
+                    alt=""
+                  />
                 </h3>
-      
+
                 <label class="flex items-center space-x-2 mt-10 text-gray-600">
-                  <input id="show_me_everything" type="radio" name="show_me" value="0" checked="checked">
+                  <input
+                    id="show_me_everything"
+                    type="radio"
+                    name="show_me"
+                    value="0"
+                    checked="checked"
+                  />
                   <span class="text-sm font-medium">Everything</span>
                 </label>
-      
+
                 <label class="flex items-center space-x-2 mt-4 text-gray-600">
-                  <input id="show_me_not_seen" type="radio" value="1" name="show_me">
-                  <span class="text-sm font-medium">TV Shows I Haven't Seen</span>
+                  <input
+                    id="show_me_not_seen"
+                    type="radio"
+                    value="1"
+                    name="show_me"
+                  />
+                  <span class="text-sm font-medium"
+                    >TV Shows I Haven't Seen</span
+                  >
                 </label>
-      
+
                 <label class="flex items-center space-x-2 mt-4 text-gray-600">
-                  <input id="show_me_seen" type="radio" value="2" name="show_me">
+                  <input
+                    id="show_me_seen"
+                    type="radio"
+                    value="2"
+                    name="show_me"
+                  />
                   <span class="text-sm font-medium">TV Shows I Have Seen</span>
                 </label>
               </div>
               <div class="p-4 border-t border-gray-200">
                 <h3 class="flex items-center text-gray-500">Air Dates</h3>
-      
+
                 <label class="flex items-center space-x-2 mt-4 text-gray-600">
-                  <input id="all_releases" type="checkbox" name="all_releases" value="true" checked="">
+                  <input
+                    id="all_releases"
+                    type="checkbox"
+                    name="all_releases"
+                    value="true"
+                    checked=""
+                  />
                   <span class="text-sm font-medium">Search all episodes?</span>
                 </label>
-      
+
                 <div class="flex items-center mt-8 space-x-2 justify-between">
                   <span class="text-xs text-gray-500">from</span>
-                  <input type="date" class="border border-gray-300 px-3 py-2 rounded-md">
+                  <input
+                    type="date"
+                    class="border border-gray-300 px-3 py-2 rounded-md"
+                  />
                 </div>
-      
+
                 <div class="flex items-center mt-8 space-x-2 justify-between">
                   <span class="text-xs text-gray-500">to</span>
-                  <input type="date" class="border border-gray-300 px-3 py-2 rounded-md">
+                  <input
+                    type="date"
+                    class="border border-gray-300 px-3 py-2 rounded-md"
+                  />
                 </div>
               </div>
               <div class="p-4 border-t border-gray-200">
                 <h3 class="text-gray-500">Genres</h3>
-                <ul id="with_genres" class=" mt-4">
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10759">Action &amp; Adventure</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10762">Kids</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10763">News</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=9648">Phim Bí Ẩn</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=18">Phim Chính Kịch</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10751">Phim Gia Đình</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=16">Phim Hoạt Hình</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=35">Phim Hài</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=80">Phim Hình Sự</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=37">Phim Miền Tây</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=99">Phim Tài Liệu</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10764">Reality</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10765">Sci-Fi &amp; Fantasy</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10766">Soap</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10767">Talk</a></li>
-                  <li class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"><a class="no-underline" href="/discover/tv?with_genres=10768">War &amp; Politics</a></li>
+                <ul id="with_genres" class="mt-4">
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10759"
+                      >Action &amp; Adventure</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10762"
+                      >Kids</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10763"
+                      >News</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=9648"
+                      >Phim Bí Ẩn</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=18"
+                      >Phim Chính Kịch</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10751"
+                      >Phim Gia Đình</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=16"
+                      >Phim Hoạt Hình</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=35"
+                      >Phim Hài</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=80"
+                      >Phim Hình Sự</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=37"
+                      >Phim Miền Tây</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a class="no-underline" href="/discover/tv?with_genres=99"
+                      >Phim Tài Liệu</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10764"
+                      >Reality</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10765"
+                      >Sci-Fi &amp; Fantasy</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10766"
+                      >Soap</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10767"
+                      >Talk</a
+                    >
+                  </li>
+                  <li
+                    class="border border-gray-400 rounded-[14px] inline-block px-[13px] py-[5px] text-sm mt-2 text-left mr-2"
+                  >
+                    <a
+                      class="no-underline"
+                      href="/discover/tv?with_genres=10768"
+                      >War &amp; Politics</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="p-4 border-t border-gray-200">
@@ -266,174 +444,300 @@
               </div>
               <div class="p-4 border-t border-gray-200">
                 <h3 class="text-gray-500">Network</h3>
-                <input class="border border-gray-300 px-3 py-2 rounded-md w-full" type="text" placeholder="Filters by TV network">
+                <input
+                  class="border border-gray-300 px-3 py-2 rounded-md w-full"
+                  type="text"
+                  placeholder="Filters by TV network"
+                />
               </div>
             </div>
-            <div class="btn-search flex justify-center items-center h-[44px] text-[19px] font-semibold text-gray-500 bg-gray-200 rounded-[20px] my-[20px]">Search</div>
-          </div>
-      
-          <div class="w-full ">
-            <div class="grid lg:grid-cols-[repeat(5,1fr)] md:lg:grid-cols-[repeat(3,1fr)] grid-cols-[repeat(2,1fr)] md:gap-5 gap-3">
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-      
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-      
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-              <a href="./detail.html" class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md">
-                <div class="relative">
-                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg" alt="" class="rounded-t-lg">
-                  <img class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75" src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
-                  <div class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold
-                  ">89<sup>%</sup>
-                <div class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"></div>
-                
-                </div>
-                </div>
-                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
-                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
-                  <span class="text-sm  text-[#686868]">Jan 04, 2023</span>
-                </div>
-              </a>
-      
+            <div
+              class="btn-search flex justify-center items-center h-[44px] text-[19px] font-semibold text-gray-500 bg-gray-200 rounded-[20px] my-[20px]"
+            >
+              Search
             </div>
-            <div class="rounded-2xl max-w-full w-full h-[50px] mb-4 flex justify-center items-center bg-[rgb(1,180,228)] text-xl font-semibold text-white mt-[30px] p-0 rounded-lg;
-            ">Load More</div>
+          </div>
+
+          <div class="w-full">
+            <div
+              class="grid lg:grid-cols-[repeat(5,1fr)] md:lg:grid-cols-[repeat(3,1fr)] grid-cols-[repeat(2,1fr)] md:gap-5 gap-3"
+            >
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg"
+                    alt="https://www.themoviedb.org/t/p/w220_and_h330_face/9McqS8mgMf5NJCAKZIY6J1oOl8y.jpg"
+                    class="rounded-t-lg"
+                  />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Tagesschau</h4>
+                  <span class="text-sm text-[#686868]"> Dec 26, 1952 </span>
+                </div>
+              </a>
+
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg"
+                    alt=""
+                    class="rounded-t-lg"
+                  />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Teri Meri Doriyaann</h4>
+                  <span class="text-sm text-[#686868]">Jan 04, 2023</span>
+                </div>
+              </a>
+
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/6ikbefd7VeopbBuGgioYMNU5bQj.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Rabb Se Hai Dua
+                  </h4>
+                  <span class="text-sm text-[#686868]">                    Nov 28, 2022
+                  </span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/uhXU0SMPMlemKGHmwbldM60qqmW.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Katha Ankahee
+                  </h4>
+                  <span class="text-sm text-[#686868]">                    Dec 05, 2022
+                  </span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/cGUF4aT3GCmCy3f84KKIpWS3kty.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Pyar Ka Pehla Naam: Radha Mohan</h4>
+                  <span class="text-sm text-[#686868]">Jan 04, 2023</span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/3uU5uJzOX7xe7mn7YKpBM9oiEZO.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Tomorrow is Ours</h4>
+                  <span class="text-sm text-[#686868]">Jan 04, 2023</span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/bclnfDXvx7UydFSk83B258vRRvI.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold"></h4>
+                  <span class="text-sm text-[#686868]">Jan 04, 2023</span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/m1aGGAPvLpWF5cGhkQeZjbpu2nr.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    89<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Queridos Papás</h4>
+                  <span class="text-sm text-[#686868]">Jan 04, 2023</span>
+                </div>
+              </a>
+              <a
+                href="./detail.html"
+                class="item-product relative bg-white border border-gray-200 rounded-lg shadow-md"
+              >
+                <div class="relative">
+                  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/ag6PmoBxkF2s1uY3An618NCEt3g.jpg" alt="" class="rounded-t-lg" />
+                  <img
+                    class="absolute top-0 right-0 w-[26px] h-[26px]rounded-full overflow-hidden brightness-75"
+                    src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute flex justify-center items-center w-[38px] h-[38px] bg-black left-[11px] -bottom-4 text-white rounded-full overflow-hidden text-sm font-semibold"
+                  >
+                    31<sup>%</sup>
+                    <div
+                      class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-[30px] pt-0 pb-[21px] px-2.5">
+                  <h4 class="text-16 font-semibold">Al rojo vivo
+                  </h4>
+                  <span class="text-sm text-[#686868]">                    Jan 10, 2011
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="rounded-2xl max-w-full w-full h-[50px] mb-4 flex justify-center items-center bg-[rgb(1,180,228)] text-xl font-semibold text-white mt-[30px] p-0 rounded-lg;"
+            >
+              Load More
+            </div>
           </div>
         </div>
       </div>
-      
 
-
-     <!-- ==========END CONTENT ============ -->
-      
-
+      <!-- ==========END CONTENT ============ -->
 
       <!-- ==================================== START FOOTER  ========================= -->
       <footer class="footer bg-[#03213a] text-white">
-        <div class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div
+          class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6"
+        >
           <div class="join-community">
-            <img src="./images/logoFooter.svg" alt="footer-logo" class="w-32 mb-6" />
-            <a href="#!" class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400">Join community</a>
+            <img
+              src="./images/logoFooter.svg"
+              alt="footer-logo"
+              class="w-32 mb-6"
+            />
+            <a
+              href="#!"
+              class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400"
+              >Join community</a
+            >
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">THE BASICS</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              THE BASICS
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Giới thiệu về TMDB</a></li>
               <li><a href="#!" class="text-white">Contact Us</a></li>
@@ -443,7 +747,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">GET INVOLVED</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              GET INVOLVED
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Contribution Bible</a></li>
               <li><a href="#!" class="text-white">Add New Movie</a></li>
@@ -451,7 +759,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">COMMUNITY</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              COMMUNITY
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Guidelines</a></li>
               <li><a href="#!" class="text-white">Discussions</a></li>
@@ -460,7 +772,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">LEGAL</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              LEGAL
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Terms of Use</a></li>
               <li><a href="#!" class="text-white">API Terms of Use</a></li>
@@ -471,9 +787,6 @@
         </div>
       </footer>
       <!-- ==================================== END FOOTER  ========================= -->
-      
-    
-    
     </div>
   </body>
 </html>

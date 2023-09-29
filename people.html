@@ -4,148 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="scroll.css" />
     <title>TMDB-Tailwindcss</title>
   </head>
   <body>
     <div class="overflow-hidden">
       <div class="fixed z-[100] top-0 inset-x-0 bg-[#032541] text-[#fff]">
         <nav
-          class="max-w-[1300px] ease-[ease-in] transition-all duration-[0.5s] mx-auto my-0 lg:block hidden"
-        >
-          <div class="flex items-center gap-4 font-semibold px-10 py-[18px]">
-            <a href="/" class="apply text-[2.1rem] pl-0 pr-[15px] py-0">
-              <img src="images/logo.svg" alt="logo" width="154" height="20" />
-            </a>
+        class="max-w-[1300px] ease-[ease-in] transition-all duration-[0.5s] mx-auto my-0 lg:block hidden"
+      >
+        <div class="flex items-center gap-4 font-semibold px-10 py-[18px]">
+          <a href="/" class="apply text-[2.1rem] pl-0 pr-[15px] py-0">
+            <img src="images/logo.svg" alt="logo" width="154" height="20" />
+          </a>
 
-            <div class="flex items-center justify-between w-full">
-              <ul class="flex items-center gap-6">
-                <li class="nav-list-container--item group relative">
-                  <a href="/">Movies</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+          <div class="flex items-center justify-between w-full">
+            <ul class="flex items-center gap-6">
+              <li class="nav-list-container--item group relative">
+                <a href="/">Movies</a>
+                <div
+                  class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Popular</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Popular</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Now Playing</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Upcoming</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Top Rated</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">TV Shows</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Now Playing</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./tvShow.html"
-                      >Popular</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Airing Today</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >On TV</a
-                    >
-                    <a class="text-black text-base font-normal mb-2" href="#"
-                      >Top Rated</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">People</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Upcoming</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./people.html"
-                      >Popular</a
-                    >
-                  </div>
-                </li>
-
-                <li class="nav-list-container--item group relative">
-                  <a href="/">More</a>
-                  <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Top Rated</a
                   >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Popular</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Airing Today</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >On TV</a
-                    >
-                    <a
-                      class="text-black text-base font-normal mb-2"
-                      href="./movies.html"
-                      >Top Rated</a
-                    >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="/">TV Shows</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./tvShow.html"
+                    >Popular</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >Airing Today</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >On TV</a
+                  >
+                  <a class="text-black text-base font-normal mb-2" href="#"
+                    >Top Rated</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="./people.html">People</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./people.html"
+                    >Popular</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-list-container--item group relative">
+                <a href="/">More</a>
+                <div
+                class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+              ></div>
+                <div
+                  class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Popular</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Airing Today</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >On TV</a
+                  >
+                  <a
+                    class="text-black text-base font-normal mb-2"
+                    href="./movies.html"
+                    >Top Rated</a
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <ul class="flex items-center gap-[26px]">
+              <li>
+                <a href="/">
+                  <i class="w-5 block">
+                    <img src="images/plus.svg" alt="" />
+                  </i>
+                </a>
+              </li>
+
+              <li>
+                <a href="/">
+                  <div
+                    class="w-7 h-[26px] flex justify-center items-center content-center border text-[0.7rem] px-[5px] py-[3px] rounded-[3px] border-solid border-white"
+                  >
+                    EN
                   </div>
-                </li>
-              </ul>
+                </a>
+              </li>
 
-              <ul class="flex items-center gap-[26px]">
-                <li>
-                  <a href="/">
-                    <i class="w-5 block">
-                      <img src="images/plus.svg" alt="" />
-                    </i>
-                  </a>
-                </li>
+              <li>
+                <a href="/">Login</a>
+              </li>
 
-                <li>
-                  <a href="/">
-                    <div
-                      class="w-7 h-[26px] flex justify-center items-center content-center border text-[0.7rem] px-[5px] py-[3px] rounded-[3px] border-solid border-white"
-                    >
-                      EN
-                    </div>
-                  </a>
-                </li>
+              <li>
+                <a href="/">Join TMDB</a>
+              </li>
 
-                <li>
-                  <a href="/">Login</a>
-                </li>
-
-                <li>
-                  <a href="/">Join TMDB</a>
-                </li>
-
-                <li>
-                  <a href="/">
-                    <i class="block w-[30px]">
-                      <img src="./images/search.svg" alt="" />
-                    </i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a href="/">
+                  <i class="block w-[30px]">
+                    <img src="./images/search.svg" alt="" />
+                  </i>
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
         <!-- ======= Mobile ==== -->
-        <div class=" bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between">
+        <div
+          class="bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between"
+        >
           <span class="mobile-header--icon menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -178,93 +198,174 @@
                 />
               </svg>
             </span>
-            <img src="./images/search.svg" alt="" class="mobile-header--icon search w-6 h-6" />
+            <img
+              src="./images/search.svg"
+              alt=""
+              class="mobile-header--icon search w-6 h-6"
+            />
           </div>
         </div>
-        
       </div>
-
 
       <div class="max-w-7xl mx-auto md:mt-[66px] mt-[61px] md:px-20 p-4">
         <h2 class="text-2xl font-semibold mb-4">Popular Movies</h2>
-      
+
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
               <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <span class="text-sm text-gray-500 block truncate"
+                >섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span
+              >
             </div>
           </div>
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/lldeQ91GwIVff43JBrpdbAAeYWj.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
-              <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <h2 class="text-lg font-semibold mb-1">Jason Statham</h2>
+              <span class="text-sm text-gray-500 block truncate">
+                Tên Trộm Nữ Trang, Cá Mập Siêu Bạo Chúa, and Người Vận Chuyển
+              </span>
             </div>
           </div>
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/3YF19rWusxWfEI59ZM33dFhasRq.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
-              <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <h2 class="text-lg font-semibold mb-1">Julianne Moore</h2>
+              <span class="text-sm text-gray-500 block truncate">
+                Công Viên Kỷ Jura 2: Thế Giới Bị Mất, Kingsman: Tổ Chức Hoàng
+                Kim, and Still Alice
+              </span>
             </div>
           </div>
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/ojVulUpslqp5zXA0GVpNZT1Pma4.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
-              <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <h2 class="text-lg font-semibold mb-1">Mabel Escaño</h2>
+              <span class="text-sm text-gray-500 block truncate">
+                Lovers: A True Story, Mansion of the Living Dead, and Wicked
+                Memoirs of Eugenie
+              </span>
             </div>
           </div>
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
-              <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <h2 class="text-lg font-semibold mb-1">Gary Oldman</h2>
+              <span class="text-sm text-gray-500 block truncate">
+                Người Dơi: Kỵ Sĩ Bóng Đêm, Người Dơi: Kỵ Sĩ Bóng Đêm Trỗi Dậy,
+                and Thời Khắc Đen Tối
+              </span>
             </div>
           </div>
           <div class="bg-white rounded-md shadow-md overflow-hidden">
-            <img src="https://www.themoviedb.org/t/p/w235_and_h235_face/6q8WnNGmI9aB05rFW7AQQcqyWGq.jpg" class="w-full" alt="Performer Image">
+            <img
+              src="https://www.themoviedb.org/t/p/w235_and_h235_face/uEzQ9nb3uKD68HopNtCrsRyd4aL.jpg"
+              class="w-full"
+              alt="Performer Image"
+            />
             <div class="p-2">
-              <h2 class="text-lg font-semibold mb-1">Sae Bom</h2>
-              <span class="text-sm text-gray-500 block truncate">섹스 소녀 12, 이모의 유혹 3, 화끈한 미용실</span>
+              <h2 class="text-lg font-semibold mb-1">Ivanna Sakhno</h2>
+              <span class="text-sm text-gray-500 block truncate">
+                Pacific Rim: Trỗi Dậy, Bạn Trai Cũ Tôi Là Điệp Viên, and Đồi
+                Tuyết Máu
+              </span>
             </div>
           </div>
           <!-- Repeat this performer block for other performers -->
-      
         </div>
-      
+
         <div class="flex items-center justify-center mt-10 gap-3">
-          <button class="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          <button
+            class="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6 text-blue-600"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
             </svg>
           </button>
           <a href="#" class="page-link ml-2">1</a>
           <a href="#" class="page-link ml-2">2</a>
-          <a href="#" class="page-link ml-2 bg-blue-600 text-white text-lg h-9 w-9 flex items-center justify-center rounded-[50%]">3</a>
+          <a
+            href="#"
+            class="page-link ml-2 bg-blue-600 text-white text-lg h-9 w-9 flex items-center justify-center rounded-[50%]"
+            >3</a
+          >
           <span class="text-gray-500 mx-2">...</span>
           <a href="#" class="page-link ml-2">23</a>
-          <button class="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          <button
+            class="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6 text-blue-600"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
             </svg>
           </button>
         </div>
       </div>
-      
-
 
       <!-- ==================================== START FOOTER  ========================= -->
       <footer class="footer bg-[#03213a] text-white">
-        <div class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div
+          class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6"
+        >
           <div class="join-community">
-            <img src="./images/logoFooter.svg" alt="footer-logo" class="w-32 mb-6" />
-            <a href="#!" class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400">Join community</a>
+            <img
+              src="./images/logoFooter.svg"
+              alt="footer-logo"
+              class="w-32 mb-6"
+            />
+            <a
+              href="#!"
+              class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400"
+              >Join community</a
+            >
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">THE BASICS</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              THE BASICS
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Giới thiệu về TMDB</a></li>
               <li><a href="#!" class="text-white">Contact Us</a></li>
@@ -274,7 +375,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">GET INVOLVED</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              GET INVOLVED
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Contribution Bible</a></li>
               <li><a href="#!" class="text-white">Add New Movie</a></li>
@@ -282,7 +387,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">COMMUNITY</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              COMMUNITY
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Guidelines</a></li>
               <li><a href="#!" class="text-white">Discussions</a></li>
@@ -291,7 +400,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">LEGAL</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              LEGAL
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Terms of Use</a></li>
               <li><a href="#!" class="text-white">API Terms of Use</a></li>
@@ -302,9 +415,6 @@
         </div>
       </footer>
       <!-- ==================================== END FOOTER  ========================= -->
-      
-    
-    
     </div>
   </body>
 </html>
