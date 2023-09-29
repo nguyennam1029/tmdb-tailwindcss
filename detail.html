@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="scroll.css" />
+    <title>TMDB-Tailwindcss</title>
+  </head>
+  <body>
+    <div class="overflow-hidden">
+      <div class="fixed z-[100] top-0 inset-x-0 bg-[#032541] text-[#fff]">
+        <nav
+          class="max-w-[1400px] ease-[ease-in] transition-all duration-[0.5s] mx-auto my-0 lg:block hidden"
+        >
+          <div class="flex items-center gap-4 font-semibold px-10 py-[18px]">
+            <a href="/" class="apply text-[2.1rem] pl-0 pr-[15px] py-0">
+              <img src="images/logo.svg" alt="logo" width="154" height="20" />
+            </a>
+
+            <div class="flex items-center justify-between w-full">
+              <ul class="flex items-center gap-6">
+                <li class="nav-list-container--item group relative">
+                  <a href="/">Movies</a>
+                  <div
+                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
+                      >Popular</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >Now Playing</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >Upcoming</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >Top Rated</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-list-container--item group relative">
+                  <a href="/">TV Shows</a>
+                  <div
+                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./tvShow.html"
+                      >Popular</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >Airing Today</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >On TV</a
+                    >
+                    <a class="text-black text-base font-normal mb-2" href="#"
+                      >Top Rated</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-list-container--item group relative">
+                  <a href="/">People</a>
+                  <div
+                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./people.html"
+                      >Popular</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-list-container--item group relative">
+                  <a href="/">More</a>
+                  <div
+                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                  >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
+                      >Popular</a
+                    >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
+                      >Airing Today</a
+                    >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
+                      >On TV</a
+                    >
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
+                      >Top Rated</a
+                    >
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="flex items-center gap-[26px]">
+                <li>
+                  <a href="/">
+                    <i class="w-5 block">
+                      <img src="images/plus.svg" alt="" />
+                    </i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/">
+                    <div
+                      class="w-7 h-[26px] flex justify-center items-center content-center border text-[0.7rem] px-[5px] py-[3px] rounded-[3px] border-solid border-white"
+                    >
+                      EN
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/">Login</a>
+                </li>
+
+                <li>
+                  <a href="/">Join TMDB</a>
+                </li>
+
+                <li>
+                  <a href="/">
+                    <i class="block w-[30px]">
+                      <img src="./images/search.svg" alt="" />
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= Mobile ==== -->
+        <div
+          class="bg-[#032541]900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between"
+        >
+          <span class="mobile-header--icon menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          <a href="" class="mobile-header--logo">
+            <img src="./images/logoFooter.svg" alt="" class="w-14" />
+          </a>
+          <div class="mobile-header--right flex gap-2 items-center">
+            <span class="mobile-header--icon user">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <img
+              src="./images/search.svg"
+              alt=""
+              class="mobile-header--icon search w-6 h-6"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== START CONTENT ==================  -->
+      <div class="md:mt-[66px] mt-[61px]">
+        <div
+          class="shortcut-bar-wrapper flex justify-center items-center h-12 gap-10"
+        >
+          <div class="shortcut-bar--item">
+            <a
+              href="#"
+              class="shortcut-bar--link flex justify-center items-center gap-1 text-black"
+            >
+              Overview
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                class="shortcut-bar--icon w-4 h-4"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="shortcut-bar--item">
+            <a
+              href="#"
+              class="shortcut-bar--link flex justify-center items-center gap-1 text-black"
+            >
+              Media
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                class="shortcut-bar--icon w-4 h-4"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="shortcut-bar--item">
+            <a
+              href="#"
+              class="shortcut-bar--link flex justify-center items-center gap-1 text-black"
+            >
+              Random
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                class="shortcut-bar--icon w-4 h-4"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="shortcut-bar--item">
+            <a
+              href="#"
+              class="shortcut-bar--link flex justify-center items-center gap-1 text-black"
+            >
+              Shared
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                class="shortcut-bar--icon w-4 h-4"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== START POSTER ================  -->
+      <div
+        class="movie-detail relative bg-cover bg-no-repeat bg-center h-[510px] items-center lg:flex hidden"
+        style="
+          background-image: url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg');
+        "
+      >
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-[linear-gradient(_to_right,rgb(67,67,67)_150px,rgba(31.5,31.5,31.5,0.54)_100%_)] z-[1] inset-0;
+        "></div>
+        <div
+          class="movie-header z-10 relative z-2 max-w-[1400px] mx-auto grid grid-cols-[300px,1fr] gap-10 items-center px-10"
+        >
+          <div class="rounded-xl overflow-hidden">
+            <img
+              src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3aJvYn7PBMBOYkZdD2Rc0gn1Lxd.jpg"
+              alt=""
+            />
+          </div>
+          <div class="poster-info">
+            <div class="poster-title flex items-center gap-6 mb-[6px]">
+              <h2 class="text-white text-3xl font-semibold">Trừng Phạt</h2>
+              <span class="text-white text-3xl font-normal opacity-80"
+                >(2022)</span
+              >
+            </div>
+            <div
+              class="poster-facts flex items-center text-white text-base gap-4 my-[4px]"
+            >
+              <span
+                class="certification inline-flex whitespace-nowrap items-center content-center py-1 px-2 border border-white rounded-2px mr-[7px] text-opacity-60"
+              >
+                PG - 13
+              </span>
+              <span class="date">08/25/2023 (US)</span>
+              <span class="category poster-facts--relative relative ml-[6px]"
+                >Phim Hành Động, Phim Bí Ẩn, Phim Gây Cấn, Phim Hình Sự</span
+              >
+              <span class="runtime poster-facts--relative relative ml-[6px]"
+                >1h24m</span
+              >
+            </div>
+            <div class="my-3">
+              <ul class="poster-actions flex items-center gap-4 text-white">
+                <li class="chart flex items-center">
+                  <div
+                    class="relative flex justify-center items-center w-[60px] h-[60px] bg-black rounded-[50%]"
+                  >
+                    <span class="chart-content--score text-[20px] font-semibold"
+                      >89<sup>%</sup></span
+                    >
+                    <div
+                      class="absolute w-full h-full border-[3px] border-green-500 top-0 left-0 rounded-full"
+                    ></div>
+                  </div>
+                  <p class="chart-title text-base font-semibold ml-6">
+                    User <br />
+                    Score
+                  </p>
+                </li>
+                <li class="poster-item flex items-center">
+                  <a
+                    href="#"
+                    class="poster-item--link bg-opacity-100 bg-[#032541] rounded-full w-12 h-12 flex justify-center items-center text-2xl font-bold"
+                  >
+                    <img
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-159-thumbnails-list-white-c260ea972eebf812289fd3c41d0d2c1dff33ecbcd62be13fba8eeaf9de173789.svg"
+                      alt="" 
+                      class="w-4 h-4"
+
+                    />
+                  </a>
+                </li>
+                <li class="poster-item flex items-center">
+                  <a
+                    href="#"
+                    class="poster-item--link bg-opacity-100 bg-[#032541] rounded-full w-12 h-12 flex justify-center items-center text-2xl font-bold"
+                  >
+                    <img
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-13-heart-white-28d2cc2d6418c5047efcfd2438bfc5d109192671263c270993c05f130cc4584e.svg"
+                      alt=""
+                      class="w-4 h-4"
+                    />
+                  </a>
+                </li>
+                <li class="poster-item flex items-center">
+                  <a
+                    href="#"
+                    class="poster-item--link bg-opacity-100 bg-[#032541] rounded-full w-12 h-12 flex justify-center items-center text-2xl font-bold"
+                  >
+                    <img
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-73-bookmark-white-432e98d550b7e4c80b06272c49475b0db85a60f6fae450420713004b3c9d3ffd.svg"
+                      alt="" 
+                      class="w-4 h-4"
+
+                    />
+                  </a>
+                </li>
+                <li class="poster-item flex items-center">
+                  <a
+                    href="#"
+                    class="poster-item--link bg-opacity-100 bg-[#032541] rounded-full w-12 h-12 flex justify-center items-center text-2xl font-bold"
+                  >
+                    <img
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-49-star-white-5c85220678b312aea9599d5f12ad858a9e7df226de51ef8b6b699023ffeda5fa.svg"
+                      alt="" 
+                      class="w-4 h-4"
+
+                    />
+                  </a>
+                </li>
+                <li class="poster-item flex items-center">
+                  <a href="#" class="font-bold">
+                    <img
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-175-play-806cb05551791b8dedd7f8d38fd3bd806e2d397fcfeaa00a5cc9129f0819fd07.svg"
+                      alt=""
+                    />
+                  </a>
+                  Play Trailer
+                </li>
+              </ul>
+            </div>
+            <div class="header-info text-white">
+              <h3 class="tagline text-[#c5c5c5] italic mb-3">selectItem tagline</h3>
+              <div class="overview">
+                <p class="overview-lable text-2xl font-semibold mb-2">
+                  Overview
+                </p>
+                <span class="text-gray-200 text-base leading-7">
+                  Matt Turner (Liam Neeson) là một doanh nhân người Mỹ thành đạt
+                  sống ở Berlin, đang phải cân bằng giữa sự nghiệp tài chính
+                  đang bùng nổ và trách nhiệm gia đình.
+        
+                </span>
+              </div>
+              <div
+                class="people-poster mt-3 text-gray-200 grid grid-cols-3 gap-5"
+              >
+                <div class="people-poster--profile">
+                  <a
+                    href="/person/41671-nimrod-antal"
+                    class="text-base font-medium"
+                    >Nimród Antal</a
+                  >
+                  <p class="character text-sm mt-0">Director</p>
+                </div>
+                <div class="people-poster--profile">
+                  <a
+                    href="/person/41671-nimrod-antal"
+                    class="text-base font-medium"
+                    >Nimród Antal</a
+                  >
+                  <p class="character text-sm mt-0">Director</p>
+                </div>
+                <div class="people-poster--profile">
+                  <a
+                    href="/person/41671-nimrod-antal"
+                    class="text-base font-medium"
+                    >Nimród Antal</a
+                  >
+                  <p class="character text-sm mt-0">Director</p>
+                </div>
+                <div class="people-poster--profile">
+                  <a
+                    href="/person/41671-nimrod-antal"
+                    class="text-base font-medium"
+                    >Nimród Antal</a
+                  >
+                  <p class="character text-sm mt-0">Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------- START POSTER RESPONSIVE ----------  -->
+      <div class="lg:hidden " style="background-image: linear-gradient(
+        to right,
+        rgba(31.5, 31.5, 52.5, 1) 0,
+        rgba(31.5, 31.5, 52.5, 0.96) 100%
+      );">
+        <div class="w-full flex items-center relative bg-cover bg-no-repeat md:h-[376px] h-[176px]" style="background-image: url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg')">
+          <div class="absolute top-0 left-0 right-0 bottom-0 bg-opacity-50 bg-black z-1"></div>
+          <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-[rgba(31.5, 31.5, 52.5, 1)] via-transparent to-transparent z-1"></div>
+          <!-- Your content here, such as the image and other elements -->
+          <div class="h-4/5 rounded-xl overflow-hidden">
+            <img
+            class="relative z-[2] h-full pl-5 rounded-xl overflow-hidden"
+              src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3aJvYn7PBMBOYkZdD2Rc0gn1Lxd.jpg"
+              alt=""
+            />
+          </div>
+         
+        </div>
+
+        <div class="py-5 text-white">
+      
+          <div class="flex items-center md:gap-1.5 md:mb-1.5 justify-center">
+            <h2 class="md:text-[34px] md:text-white md:font-bold text-[24px]">Trừng Phạt</h2>
+            <span class="md:text-[33px] md:text-white md:font-normal md:opacity-80 text-xl">(2022)</span>
+          </div>
+      
+          <ul class="poster-actions flex justify-center gap-5 text-white">
+            <li class="flex items-center gap-2">
+              <div class="chart-content flex items-center justify-center w-[60px] h-[60px] bg-black rounded-full border-[3px] border-solid border-[#21d07a]">
+                <span class="chart-content--score text-xl font-bold"> 89 <sup class="text-sm font-normal">%</sup> </span>
+              </div>
+              <p class="chart-title text-center ml-[6px]">
+                User
+                Score
+              </p>
+            </li>
+      
+            <li class="flex items-center gap-2">
+              <a href="#" class="w-4 h-4">
+                <img
+                class="brightness-0 invert-[1]"
+                  src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-175-play-806cb05551791b8dedd7f8d38fd3bd806e2d397fcfeaa00a5cc9129f0819fd07.svg"
+                  alt=""
+                />
+              </a>
+              Play Trailer
+            </li>
+          </ul>
+      
+          <div class="poster-facts flex flex-col bg-opacity-10 border-t border-b border-opacity-20 py-2">
+            <div class="text-center">
+              <span class="certification bg-opacity-50 p-1 rounded border border-opacity-50 text-sm text-gray-600">PG - 13</span>
+              <span class="date text-sm text-gray-600">08/25/2023 (US)</span>
+              <span class="runtime poster-facts--relative text-sm text-gray-600"> 1h24m </span>
+            </div>
+            
+            <span class="category poster-facts--relative text-center text-sm text-gray-600">
+              Phim Hành Động, Phim Bí Ẩn, Phim Gây Cấn, Phim Hình Sự
+            </span>
+          </div>
+      
+          <div class="overview py-4">
+            <p class="overview-lable text-gray-600 text-lg font-semibold">Overview</p>
+            <span class="text-gray-300">
+              Matt Turner (Liam Neeson) là một doanh nhân người Mỹ thành
+              đạt sống ở Berlin, đang phải cân bằng giữa sự nghiệp tài
+              chính đang bùng nổ và trách nhiệm gia đình. Một buổi sáng
+              đang lái xe đưa con đến trường, Matt nhận được một cuộc điện
+              thoại từ một giọng nói bí ẩn: có một quả bom dưới ghế của
+              anh ấy sẽ phát nổ trừ khi anh ấy hoàn thành một loạt nhiệm
+              vụ cụ thể, và nhanh chóng. Bị mắc kẹt trong một cuộc rượt
+              đuổi tốc độ cao khắp thành phố, Matt phải làm theo chỉ dẫn
+              ngày càng nguy hiểm của “kẻ lạ mặt” trong cuộc chạy đua với
+              thời gian để bảo vệ gia đình và tìm lời giải đáp cho những
+              bí ẩn đang diễn ra. Bộ phim ly kỳ về chiếc đồng hồ tích tắc
+              nhập vai này của các nhà sản xuất phim NON-STOP và THE
+              COMMUTER thu hút khán giả tham gia vào một hành trình cứu
+              chuộc và trả thù có chỉ số octan cao.
+            </span>
+          </div>
+      
+          <div class="people-poster grid grid-cols-2 text-center">
+            <div class="people-poster--profile">
+              <a href="/person/41671-nimrod-antal" class="text-base font-medium text-white">Nimród Antal</a>
+              <p class="character text-sm text-gray-600">Director</p>
+            </div>
+            <div class="people-poster--profile">
+              <a href="/person/41671-nimrod-antal" class="text-base font-medium text-white">Nimród Antal</a>
+              <p class="character text-sm text-gray-600">Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      
+      <!-- <div class="movie-detail-rp block lg:hidden">
+        Content for lg screen size
+        <div class="movie-detail-rp-poster">
+          <img
+            src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3aJvYn7PBMBOYkZdD2Rc0gn1Lxd.jpg"
+            alt=""
+          />
+        </div>
+        <div class="movie-detail-rp-content">
+      
+          <div class="poster-title">
+            <h2 class="text-2xl font-semibold">Trừng Phạt</h2>
+            <span class="text-lg font-medium">(2022)</span>
+          </div>
+      
+          <ul class="poster-actions flex justify-center gap-20 text-white">
+            <li class="chart">
+              <div class="chart-content flex items-center justify-center w-14 h-14 bg-black rounded-full">
+                <span class="chart-content--score text-2xl font-bold"> 89<sup class="text-sm font-normal">%</sup> </span>
+              </div>
+              <p class="chart-title text-center">
+                User
+                Score
+              </p>
+            </li>
+      
+            <li class="poster-item">
+              <a href="#" class="poster-item--link">
+                <img
+                  src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-175-play-806cb05551791b8dedd7f8d38fd3bd806e2d397fcfeaa00a5cc9129f0819fd07.svg"
+                  alt=""
+                />
+              </a>
+              Play Trailer
+            </li>
+          </ul>
+      
+          <div class="poster-facts flex flex-col bg-opacity-10 border-t border-b border-opacity-20 py-2">
+            <div class="text-center">
+              <span class="certification bg-opacity-50 p-1 rounded border border-opacity-50 text-sm text-gray-600">PG - 13</span>
+              <span class="date text-sm text-gray-600">08/25/2023 (US)</span>
+              <span class="runtime poster-facts--relative text-sm text-gray-600"> 1h24m </span>
+            </div>
+            
+            <span class="category poster-facts--relative text-center text-sm text-gray-600">
+              Phim Hành Động, Phim Bí Ẩn, Phim Gây Cấn, Phim Hình Sự
+            </span>
+          </div>
+      
+          <div class="overview py-4">
+            <p class="overview-lable text-gray-600 text-lg font-semibold">Overview</p>
+            <span class="text-gray-300">
+              Matt Turner (Liam Neeson) là một doanh nhân người Mỹ thành
+              đạt sống ở Berlin, đang phải cân bằng giữa sự nghiệp tài
+              chính đang bùng nổ và trách nhiệm gia đình. Một buổi sáng
+              đang lái xe đưa con đến trường, Matt nhận được một cuộc điện
+              thoại từ một giọng nói bí ẩn: có một quả bom dưới ghế của
+              anh ấy sẽ phát nổ trừ khi anh ấy hoàn thành một loạt nhiệm
+              vụ cụ thể, và nhanh chóng. Bị mắc kẹt trong một cuộc rượt
+              đuổi tốc độ cao khắp thành phố, Matt phải làm theo chỉ dẫn
+              ngày càng nguy hiểm của “kẻ lạ mặt” trong cuộc chạy đua với
+              thời gian để bảo vệ gia đình và tìm lời giải đáp cho những
+              bí ẩn đang diễn ra. Bộ phim ly kỳ về chiếc đồng hồ tích tắc
+              nhập vai này của các nhà sản xuất phim NON-STOP và THE
+              COMMUTER thu hút khán giả tham gia vào một hành trình cứu
+              chuộc và trả thù có chỉ số octan cao.
+            </span>
+          </div>
+      
+          <div class="people-poster grid grid-cols-2 text-center">
+            <div class="people-poster--profile">
+              <a href="/person/41671-nimrod-antal" class="text-base font-medium text-white">Nimród Antal</a>
+              <p class="character text-sm text-gray-600">Director</p>
+            </div>
+            <div class="people-poster--profile">
+              <a href="/person/41671-nimrod-antal" class="text-base font-medium text-white">Nimród Antal</a>
+              <p class="character text-sm text-gray-600">Director</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- =============== END POSTER ================ -->
+
+      <!-- ========================= END CONTENT ===============  -->
+
+      <!-- ==================================== START FOOTER  ========================= -->
+      <footer class="footer bg-[#03213a] text-white">
+        <div
+          class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6"
+        >
+          <div class="join-community">
+            <img
+              src="./images/logoFooter.svg"
+              alt="footer-logo"
+              class="w-32 mb-6"
+            />
+            <a
+              href="#!"
+              class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400"
+              >Join community</a
+            >
+          </div>
+          <div class="footer-column">
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              THE BASICS
+            </h5>
+            <ul class="footer-column--title">
+              <li><a href="#!" class="text-white">Giới thiệu về TMDB</a></li>
+              <li><a href="#!" class="text-white">Contact Us</a></li>
+              <li><a href="#!" class="text-white">Support Forums</a></li>
+              <li><a href="#!" class="text-white">API</a></li>
+              <li><a href="#!" class="text-white">System Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              GET INVOLVED
+            </h5>
+            <ul class="footer-column--title">
+              <li><a href="#!" class="text-white">Contribution Bible</a></li>
+              <li><a href="#!" class="text-white">Add New Movie</a></li>
+              <li><a href="#!" class="text-white">Add New TV Show</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              COMMUNITY
+            </h5>
+            <ul class="footer-column--title">
+              <li><a href="#!" class="text-white">Guidelines</a></li>
+              <li><a href="#!" class="text-white">Discussions</a></li>
+              <li><a href="#!" class="text-white">Leaderboard</a></li>
+              <li><a href="#!" class="text-white">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              LEGAL
+            </h5>
+            <ul class="footer-column--title">
+              <li><a href="#!" class="text-white">Terms of Use</a></li>
+              <li><a href="#!" class="text-white">API Terms of Use</a></li>
+              <li><a href="#!" class="text-white">Privacy Policy</a></li>
+              <li><a href="#!" class="text-white">DMCA Takedown Request</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- ==================================== END FOOTER  ========================= -->
+    </div>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="scroll.css" />
     <title>TMDB-Tailwindcss</title>
   </head>
   <body>
@@ -23,20 +23,29 @@
                 <li class="nav-list-container--item group relative">
                   <a href="/">Movies</a>
                   <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                    class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                  ></div>
+                  <div
+                    class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
                   >
                     <a
                       class="text-black text-base font-normal mb-2"
                       href="./movies.html"
                       >Popular</a
                     >
-                    <a class="text-black text-base font-normal mb-2" href="#"
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
                       >Now Playing</a
                     >
-                    <a class="text-black text-base font-normal mb-2" href="#"
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
                       >Upcoming</a
                     >
-                    <a class="text-black text-base font-normal mb-2" href="#"
+                    <a
+                      class="text-black text-base font-normal mb-2"
+                      href="./movies.html"
                       >Top Rated</a
                     >
                   </div>
@@ -45,7 +54,10 @@
                 <li class="nav-list-container--item group relative">
                   <a href="/">TV Shows</a>
                   <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                ></div>
+                  <div
+                    class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
                   >
                     <a
                       class="text-black text-base font-normal mb-2"
@@ -67,7 +79,10 @@
                 <li class="nav-list-container--item group relative">
                   <a href="./people.html">People</a>
                   <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] background: white"
+                  class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                ></div>
+                  <div
+                    class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
                   >
                     <a
                       class="text-black text-base font-normal mb-2"
@@ -80,7 +95,10 @@
                 <li class="nav-list-container--item group relative">
                   <a href="/">More</a>
                   <div
-                    class="absolute text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
+                  class="absolute w-[86px] z-10 hidden flex-col gap-2.5 px-[22px] py-[18px] rounded-xl -left-1.5 top-[18px] bg-transparent group-hover:flex"
+                ></div>
+                  <div
+                    class="absolute border border-[#ccc] shadow-md text-black w-[141px] z-10 hidden flex-col gap-2.5 items-start justify-center px-[22px] py-[18px] rounded-xl -left-1.5 top-[198%] bg-white group-hover:flex"
                   >
                     <a
                       class="text-black text-base font-normal mb-2"
@@ -145,7 +163,9 @@
           </div>
         </nav>
         <!-- ======= Mobile ==== -->
-        <div class=" bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between">
+        <div
+          class="bg-blue-900 lg:hidden text-white flex items-center px-5 py-[10px] justify-between"
+        >
           <span class="mobile-header--icon menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -178,10 +198,13 @@
                 />
               </svg>
             </span>
-            <img src="./images/search.svg" alt="" class="mobile-header--icon search w-6 h-6" />
+            <img
+              src="./images/search.svg"
+              alt=""
+              class="mobile-header--icon search w-6 h-6"
+            />
           </div>
         </div>
-        
       </div>
 
       <!-- ============ START BANNER ============ -->
@@ -192,9 +215,7 @@
         "
       >
         <div class="banner-contents md:px-10 md:py-16 p-5 h-72">
-          <h2 class="text-[48px] font-semibold">
-            Welcome.
-          </h2>
+          <h2 class="text-[48px] font-semibold">Welcome.</h2>
           <h3
             class="banner-description md:text-[32px] text-2xl font-semibold md:mt-4 mt-0"
           >
@@ -227,25 +248,24 @@
       <!-- ============= END BANNER =========== -->
 
       <!-- ============== START TRENDING ========== -->
-      <div class="max-w-[1300px] m-auto ">
+      <div class="max-w-[1300px] m-auto">
         <div class="">
           <div class="flex items-center gap-5 mt-10">
             <h2 class="text-2xl font-semibold px-5 md:px-0">Trending</h2>
             <div
-            class="rounded-full flex items-center space-x-2 border border-solid border-[#032541]"
-          >
-            <p
-              class="bg-[#032541] py-1 px-3 rounded-full inline-flex items-center text-[#52c4a3] font-semibold"
+              class="rounded-full flex items-center space-x-2 border border-solid border-[#032541]"
             >
-              Today
-             
-            </p>
-            <a
-              href="#"
-              class="pr-3 text-[#032541] font-medium hover:text-blue-500 transition duration-300"
-              >This week</a
-            >
-          </div>
+              <p
+                class="bg-[#032541] py-1 px-3 rounded-full inline-flex items-center text-[#52c4a3] font-semibold"
+              >
+                Today
+              </p>
+              <a
+                href="#"
+                class="pr-3 text-[#032541] font-medium hover:text-blue-500 transition duration-300"
+                >This week</a
+              >
+            </div>
           </div>
           <div
             class="px-5 md:px-0 overflow-x-auto flex gap-5 max-w-[1300px] mx-auto px-10 py-10 bg-cover bg-center bg-no-repeat bg-[url('images/bg-movie.svg')]"
@@ -258,7 +278,38 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/zupyCthty7BP01jrVFC9n7WtGCv.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >79<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Tay Đua Cự Phách
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Aug 09, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/A4LTXT8MMZIr4aIwhE4qbGFivBo.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -275,11 +326,166 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Câu Chuyện Kì Diệu Về Henry
                 </h4>
                 <span class="product-time text-sm text-gray-600"
                   >Aug 16, 2023</span
                 >
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/uuot1N5AgZ7xRCKgm4ZCwOhgIJu.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Gen V
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Aug 16, 2023</span
+                >
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/tslJx5LPn2aXX3USGYbh0KbglnB.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >98<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Castlevania: Dạ Khúc
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Aug 16, 2023</span
+                >
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/4Q56IatK3JDRkYWXTs29vp7RECZ.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Overhaul
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Sep 27, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/hSUi0nSrNSmi5tYbr5WXzZW1Crx.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Không Một Ai Cứu
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Sep 22, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/aQPeznSu7XDTrrdCtT5eLiu52Yu.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Lưỡi Cưa X
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Sep 26, 2023
+                </span>
               </div>
             </a>
 
@@ -313,6 +519,36 @@
                 >
               </div>
             </a>
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/qVuibhJnyRrRCcr8e3bhmBpi0Z1.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >78<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Kẻ Kiến Tạo
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Sep 27, 2023
+                </span>
+              </div>
+            </a>
 
             <a
               href="./detail.html"
@@ -320,7 +556,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/v1YEOdGptCyNxnc4mJSYNd4cE8E.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -337,7 +573,7 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Khách Sạn Continental
                 </h4>
                 <span class="product-time text-sm text-gray-600"
                   >Aug 16, 2023</span
@@ -351,7 +587,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/laCJxobHoPVaLQTKxc14Y2zV64J.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -368,11 +604,11 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Ahsoka
                 </h4>
                 <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
+                  >Aug 22, 2023
+                </span>
               </div>
             </a>
 
@@ -382,7 +618,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/ntMOnvlYYnio7Fx3xqBu9B1Sz7f.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -399,223 +635,7 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Scooby-Doo! And Krypto, Too!
                 </h4>
                 <span class="product-time text-sm text-gray-600"
                   >Aug 16, 2023</span
@@ -638,17 +658,16 @@
             class="z-[2] rounded-full flex items-center space-x-2 border border-solid border-[#2cd8ac]"
           >
             <p
-              class="bg-gradient-to-r from-teal-500  to-blue-500 py-1 px-3 rounded-full inline-flex items-center text-black font-semibold"
+              class="bg-gradient-to-r from-teal-500 to-blue-500 py-1 px-3 rounded-full inline-flex items-center text-black font-semibold"
             >
-            Popular
-             
+              Popular
             </p>
             <a
               href="#"
               class="pr-3 text-white bg-transparent hover:text-blue-500 transition duration-300 hidden md:block"
-              >            In Theaters
-              </a
             >
+              In Theaters
+            </a>
           </div>
         </div>
         <div class="flex items-center gap-5 overflow-x-auto">
@@ -706,7 +725,6 @@
                 class="bg-[#032541] py-1 px-3 rounded-full inline-flex items-center text-[#52c4a3] font-semibold"
               >
                 Today
-               
               </p>
               <a
                 href="#"
@@ -716,7 +734,7 @@
             </div>
           </div>
           <div
-            class="overflow-x-auto flex gap-5 max-w-[1300px] mx-auto  px-5 py-5 md:px-10 md:py-10 bg-cover bg-center bg-no-repeat bg-[url('images/bg-movie.svg')]"
+            class="overflow-x-auto flex gap-5 max-w-[1300px] mx-auto px-5 py-5 md:px-10 md:py-10 bg-cover bg-center bg-no-repeat bg-[url('images/bg-movie.svg')]"
           >
             <!-- Mỗi sản phẩm sẽ là một phần tử của danh sách dưới đây -->
 
@@ -726,7 +744,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/bclnfDXvx7UydFSk83B258vRRvI.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -743,7 +761,100 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Flor Sem Tempo
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Jan 30, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Fe4MMlydVQ3o5eYA4AVKjLMSPb.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Tozluyaka
+                </h4>
+                <span class="product-time text-sm text-gray-600">
+                  Jun 27, 2022
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/ag6PmoBxkF2s1uY3An618NCEt3g.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Al rojo vivo
+                </h4>
+                <span class="product-time text-sm text-gray-600">
+                  Jan 10, 2011
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cGUF4aT3GCmCy3f84KKIpWS3kty.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Pyar Ka Pehla Naam: Radha Mohan
                 </h4>
                 <span class="product-time text-sm text-gray-600"
                   >Aug 16, 2023</span
@@ -757,7 +868,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/5kCMJ0vVzN9PsoamKctNnUz68Q2.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -774,7 +885,128 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Land of Desire
+                </h4>
+                <span class="product-time text-sm text-gray-600">
+                  May 08, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/m1aGGAPvLpWF5cGhkQeZjbpu2nr.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Queridos Papás
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Mar 13, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/wysp5AcY9JpLjje5NunKYw7Mrtc.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Mar 13, 2023 Revenge is mine
+                </h4>
+                <span class="product-time text-sm text-gray-600"
+                  >Jun 12, 2023
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="product-item--img relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/60cqjI590JKXCAABqCStVmSBGET.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >89<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-[26px]">
+                <h4 class="text-base font-semibold truncate">
+                  Here it all begins
+                </h4>
+                <span class="text-sm text-gray-600">Aug 16, 2023</span>
+              </div>
+            </a>
+            <a
+              href="./detail.html"
+              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
+            >
+              <div class="relative">
+                <img
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/3uU5uJzOX7xe7mn7YKpBM9oiEZO.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <div
+                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
+                >
+                  <span class="percent-title text-white text-sm font-semibold"
+                    >63<sup>%</sup></span
+                  >
+                  <div
+                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-content mt-[26px]">
+                <h4 class="product-title text-base font-semibold truncate">
+                  Tomorrow is Ours
                 </h4>
                 <span class="product-time text-sm text-gray-600"
                   >Aug 16, 2023</span
@@ -788,7 +1020,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/53NfAtLy4Bv9tL5WJTtLdWD8TfT.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -805,11 +1037,11 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Meant to Be
                 </h4>
                 <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
+                  >Apr 17, 2023
+                </span>
               </div>
             </a>
 
@@ -819,7 +1051,7 @@
             >
               <div class="product-item--img relative">
                 <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
+                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/uhXU0SMPMlemKGHmwbldM60qqmW.jpg"
                   alt=""
                   class="rounded-lg"
                 />
@@ -836,258 +1068,11 @@
               </div>
               <div class="product-content mt-[26px]">
                 <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
+                  Katha Ankahee
                 </h4>
                 <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
-              </div>
-            </a>
-
-            <a
-              href="./detail.html"
-              class="min-w-[150px] group relative hover:shadow-lg transition-transform transform hover:translate-y-[-4px]"
-            >
-              <div class="product-item--img relative">
-                <img
-                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/cswPVyXwQ13dFHU1KFS8dpFxIyY.jpg"
-                  alt=""
-                  class="rounded-lg"
-                />
-                <div
-                  class="percent absolute -bottom-4 left-[11px] flex justify-center items-center w-[38px] h-[38px] bg-black rounded-full group-hover:flex"
-                >
-                  <span class="percent-title text-white text-sm font-semibold"
-                    >89<sup>%</sup></span
-                  >
-                  <div
-                    class="border-[3px] absolute inset-0 border-3 border-green-500 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              <div class="product-content mt-[26px]">
-                <h4 class="product-title text-base font-semibold truncate">
-                  Bọ Hung Xanh
-                </h4>
-                <span class="product-time text-sm text-gray-600"
-                  >Aug 16, 2023</span
-                >
+                  >Dec 05, 2022
+                </span>
               </div>
             </a>
             <!-- Thêm sản phẩm khác tại đây -->
@@ -1095,7 +1080,6 @@
         </div>
       </div>
       <!-- ==================================== END What's Popular ========================= -->
-
 
       <!-- ==================================== START Join Today ========================= -->
 
@@ -1140,64 +1124,96 @@
         </div>
       </div>
       <!-- ==================================== END Join Today ========================= -->
-    
+
       <!-- ==================================== START Leaderboard ========================= -->
       <div class="max-w-[1300px] m-auto mx-auto px-10 py-8">
         <div class="leaderboard-header flex items-center">
           <h2 class="text-[22px] font-semibold mr-6">LeaderBoard</h2>
           <div>
             <p class="leaderboard-header--title">
-              <span class="bg-[#64e7b9] inline-block rounded-full w-2 h-2 mr-1"></span> All Time Edits
+              <span
+                class="bg-[#64e7b9] inline-block rounded-full w-2 h-2 mr-1"
+              ></span>
+              All Time Edits
             </p>
             <p class="leaderboard-header--title">
-              <span class="bg-[#e56567] inline-block rounded-full w-2 h-2 mr-1"></span> Edits This Week
+              <span
+                class="bg-[#e56567] inline-block rounded-full w-2 h-2 mr-1"
+              ></span>
+              Edits This Week
             </p>
           </div>
         </div>
-        <ul class="leaderboard-content mt-4 grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-2">
+        <ul
+          class="leaderboard-content mt-4 grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-2"
+        >
           <li class="leaderboard-content-item flex items-center gap-4">
-            <span class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"> R </span>
+            <span
+              class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"
+            >
+              R
+            </span>
             <div class="leaderboard-content--info flex-1">
               <h4 class="text-lg font-semibold">RuiZafon</h4>
               <div class="">
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl  h-2 bg-gradient-to-r from-green-500 to-green-200"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-green-500 to-green-200"
+                  ></div>
                   <span class="text-sm">1009773</span>
                 </div>
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"
+                  ></div>
                   <span class="text-sm">9773</span>
                 </div>
               </div>
             </div>
           </li>
           <li class="leaderboard-content-item flex items-center gap-4">
-            <span class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"> R </span>
+            <span
+              class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"
+            >
+              R
+            </span>
             <div class="leaderboard-content--info flex-1">
               <h4 class="text-lg font-semibold">RuiZafon</h4>
               <div class="">
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl  h-2 bg-gradient-to-r from-green-500 to-green-200"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-green-500 to-green-200"
+                  ></div>
                   <span class="text-sm">1009773</span>
                 </div>
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"
+                  ></div>
                   <span class="text-sm">9773</span>
                 </div>
               </div>
             </div>
           </li>
           <li class="leaderboard-content-item flex items-center gap-4">
-            <span class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"> R </span>
+            <span
+              class="leaderboard-content--avatar flex items-center justify-center w-14 h-14 rounded-full text-white bg-green-500 text-xl font-semibold"
+            >
+              R
+            </span>
             <div class="leaderboard-content--info flex-1">
               <h4 class="text-lg font-semibold">RuiZafon</h4>
               <div class="">
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl  h-2 bg-gradient-to-r from-green-500 to-green-200"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-green-500 to-green-200"
+                  ></div>
                   <span class="text-sm">1009773</span>
                 </div>
                 <div class="flex items-center gap-1">
-                  <div class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"></div>
+                  <div
+                    class="flex-1 rounded-xl h-2 bg-gradient-to-r from-yellow-300 to-red-500"
+                  ></div>
                   <span class="text-sm">9773</span>
                 </div>
               </div>
@@ -1206,20 +1222,32 @@
           <!-- Repeat this structure for other leaderboard items -->
         </ul>
       </div>
-      
+
       <!-- ==================================== END Leaderboard ========================= -->
-
-
 
       <!-- ==================================== START FOOTER  ========================= -->
       <footer class="footer bg-[#03213a] text-white">
-        <div class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div
+          class="footer-nav max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-5 gap-6"
+        >
           <div class="join-community">
-            <img src="./images/logoFooter.svg" alt="footer-logo" class="w-32 mb-6" />
-            <a href="#!" class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400">Join community</a>
+            <img
+              src="./images/logoFooter.svg"
+              alt="footer-logo"
+              class="w-32 mb-6"
+            />
+            <a
+              href="#!"
+              class="footer-btn bg-white text-blue-400 font-bold text-lg rounded-md border-2 border-white px-6 py-2 transition-colors hover:bg-white hover:text-blue-400"
+              >Join community</a
+            >
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">THE BASICS</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              THE BASICS
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Giới thiệu về TMDB</a></li>
               <li><a href="#!" class="text-white">Contact Us</a></li>
@@ -1229,7 +1257,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">GET INVOLVED</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              GET INVOLVED
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Contribution Bible</a></li>
               <li><a href="#!" class="text-white">Add New Movie</a></li>
@@ -1237,7 +1269,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">COMMUNITY</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              COMMUNITY
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Guidelines</a></li>
               <li><a href="#!" class="text-white">Discussions</a></li>
@@ -1246,7 +1282,11 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h5 class="footer-column--heading text-lg font-semibold md:mb-4 mb-0">LEGAL</h5>
+            <h5
+              class="footer-column--heading text-lg font-semibold md:mb-4 mb-0"
+            >
+              LEGAL
+            </h5>
             <ul class="footer-column--title">
               <li><a href="#!" class="text-white">Terms of Use</a></li>
               <li><a href="#!" class="text-white">API Terms of Use</a></li>
@@ -1257,9 +1297,6 @@
         </div>
       </footer>
       <!-- ==================================== END FOOTER  ========================= -->
-      
-    
-    
     </div>
   </body>
 </html>
